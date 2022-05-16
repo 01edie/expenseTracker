@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expense Tracker">
+  <title>Expense Tracker</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Expense Tracker</h1>
+  </header>
+  <main class="container">
+    <div class="current-balance">
+      <h4>Your Balance</h4>
+      <h3>₹<span id="current-balance">0.00</span></h3>
+    </div>
+    <div class="status-box">
+      <div class="income">
+        <h4>Your Income</h4>
+        <p id="income">₹0.00</p>
+      </div>
+      <div class="expense">
+        <h4>Your Expense</h4>
+        <p id="expense">₹0.00</p>
+      </div>
+    </div>
+    <h3>History</h3>
+    <ul class="history-list" id="history-list">
+    </ul>
+    <h3>Add New Transaction</h3>
+    <form action="#" class="transaction-add">
+      <label for="transaction">Transaction</label>
+      <input type="text" name="transaction" id="transaction">
+      <label for="amount">Amount(negative - expense, positive - income)</label>
+      <input type="text" name="amount" id="amount">
+      <input type="submit" id="submit-btn" value="Add Transaction">
+    </form>
+  </main>
+  <script src="./scripts/script.js"></script>
+</body>
+</html>
